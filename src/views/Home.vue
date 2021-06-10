@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <detail-card :list="list"></detail-card>
 </template>
 
 <script lang="ts">
+
 import { defineComponent } from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import DetailCard from '../components/DetailCard.vue'
+import { testdata } from '../data'
 
 export default defineComponent({
   name: 'Home',
   components: {
-    HelloWorld
+    DetailCard
+  },
+  setup () {
+    return {
+      list: testdata
+    }
   }
 })
 </script>
+
+<style>
+
+</style>

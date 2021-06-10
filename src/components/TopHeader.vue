@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container">
-    <span class="navbar-brand mb-0 h1">Oasis</span>
+    <router-link class="navbar-brand" to="/">Oasis</router-link>
       <ul>
        <drop-down :title="`About Oasis`">
         <dropdown-item><a href="https://twitter.com/oasis" class="dropdown-item">Twitter</a></dropdown-item>
