@@ -1,6 +1,6 @@
 <template>
-<div class="dropdown" ref="dropdownRef">
-  <a href="#" class="btn btn-outline-light my-2 dropdown-toggle" @click.prevent="toggleOpen">{{title}}</a>
+<div class="dropdown " ref="dropdownRef">
+  <a href="#" class="btn btn-outline-light my-2 dropdown-toggle Dbgc" @click.prevent="toggleOpen">{{title}}</a>
   <ul class="dropdown-menu OO" :style="{display: 'block'}" v-if="isOpen">
     <slot></slot>
   </ul>
@@ -44,5 +44,8 @@ export default defineComponent({
 .OO{
   min-width: 1rem;
   width: 134px;
+}
+.Dbgc{
+  background-color: rgb(46, 54, 66);
 }
 </style>
